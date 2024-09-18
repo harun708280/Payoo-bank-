@@ -34,13 +34,13 @@
    </div>
 
    <div class="grid grid-cols-3 gap-3 w-11/12 mx-auto mt-7">
-    <div class="border border-slate-300 px-2 py-9 flex flex-col rounded-xl justify-center hover:border-orange-600">
+    <div class="border border-slate-300 px-2 py-9 flex flex-col rounded-xl justify-center hover:border-orange-600" id="add-moneyBtn">
         <span><i class="fa-solid fa-money-bill-transfer flex justify-center text-orange-400 text-2xl"></i></i></span>
-        <h2 class="font-bold">Add Money</h2>
+        <h2 class="font-bold" >Add Money</h2>
     </div>
-    <div class="border border-slate-300 px-2 py-9 flex flex-col rounded-xl justify-center hover:border-orange-600">
+    <div class="border border-slate-300 px-2 py-9 flex flex-col rounded-xl justify-center hover:border-orange-600" id="cash-outBtn">
         <span><i class="fa-solid fa-sack-dollar flex justify-center text-orange-400 text-2xl"></i></span>
-        <h2 class="font-bold text-center">Cashout</h2>
+        <h2 class="font-bold text-center" >Cashout</h2>
     </div>
     <div class="border border-slate-300 px-2 py-9 flex flex-col rounded-xl justify-center hover:border-orange-600">
         <span><i class="fa-solid fa-money-bill-transfer flex justify-center text-orange-400 text-2xl"></i></i></span>
@@ -63,7 +63,7 @@
     
    </div>
 <!-- latest payment -->
-   <div class=" mt-6 bg-gray-200 py-7 hidden " id="latest-payment">
+   <div id="latest-payment" class=" mt-6 bg-gray-200 py-7   " id="latest-payment">
     <div class="w-11/12 mx-auto flex justify-between">
         <h2 class="text-xl font-bold">Latest Payment</h2>
         <p>View All</p>
@@ -132,7 +132,7 @@
 
 
 <!-- add money -->
- <div class="mt-6 bg-gray-200 py-7">
+ <div class="mt-6 bg-gray-200 py-7 hidden " id="add-money-form">
     <h1 class="w-11/12 mx-auto text-2xl font-bold my-3">Add Money</h1>
     <div class="mx-auto w-11/12">
         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -177,8 +177,56 @@
     </div>
  </div>
 
+ <!-- cashout -->
+ <div class="mt-6 bg-gray-200 py-7 hidden" id="cash-out-form">
+    <h1 class="w-11/12 mx-auto text-2xl font-bold my-3">Cash Out</h1>
+    <div class="mx-auto w-11/12">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Select Bank</span>
+                      </label>
+                      
+                      <select name="" id="bank" class="input input-bordered" required >
+                        <option class="w-2" value="" disabled>Select Bank</option>
+                        <option class="w-2" value="">Sonali Bank</option>
+                        <option class="w-2" class="w-9" value="">DBBL</option>
+                        <option class="w-2" value="">Bikash</option>
+                        <option class="w-2" value="Nagad">Nagad</option>
+                      </select>
+                </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Bank Account Number</span>
+                </label>
+                <input type="text" id="acc-number" placeholder="Enter Bank Account Number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input type="text" id="cash-input-ammount" placeholder="Enter Amount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin Code</span>
+                </label>
+                <input type="password" id="cash-code" placeholder="password" class="input input-bordered" required />
+                
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn bg-lime-400" id="cash-out">Cash Out</button>
+              </div>
+            </form>
+          </div> 
+    </div>
+ </div>
+
 
 
 <script src="./home.js"></script>
+<script src="./cashout.js"></script>
+<script src="./feature.js"></script>
 </body>
 </html>
