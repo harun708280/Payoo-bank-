@@ -62,8 +62,8 @@
    
     
    </div>
-
-   <div class=" mt-6 bg-gray-200 py-7 ">
+<!-- latest payment -->
+   <div class=" mt-6 bg-gray-200 py-7 hidden " id="latest-payment">
     <div class="w-11/12 mx-auto flex justify-between">
         <h2 class="text-xl font-bold">Latest Payment</h2>
         <p>View All</p>
@@ -130,5 +130,55 @@
     </div>
    </div>
 
+
+<!-- add money -->
+ <div class="mt-6 bg-gray-200 py-7">
+    <h1 class="w-11/12 mx-auto text-2xl font-bold my-3">Add Money</h1>
+    <div class="mx-auto w-11/12">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Select Bank</span>
+                      </label>
+                      
+                      <select name="" id="bank" class="input input-bordered" required >
+                        <option class="w-2" value="" disabled>Select Bank</option>
+                        <option class="w-2" value="">Sonali Bank</option>
+                        <option class="w-2" class="w-9" value="">DBBL</option>
+                        <option class="w-2" value="">Bikash</option>
+                        <option class="w-2" value="Nagad">Nagad</option>
+                      </select>
+                </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Bank Account Number</span>
+                </label>
+                <input type="text" id="acc-number" placeholder="Enter Bank Account Number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input type="text" id="input-ammount" placeholder="Enter Amount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin Code</span>
+                </label>
+                <input type="password" id="code" placeholder="password" class="input input-bordered" required />
+                
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn bg-lime-400" id="add-money">Add Money</button>
+              </div>
+            </form>
+          </div> 
+    </div>
+ </div>
+
+
+
+<script src="./home.js"></script>
 </body>
 </html>
