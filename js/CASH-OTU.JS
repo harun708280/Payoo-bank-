@@ -8,6 +8,8 @@ document.getElementById('cash-out').addEventListener('click',function(event){
         const totalamounts=mainAmounts-ammountInput;
         document.getElementById('totalamount').innerText=totalamounts;
         
+    }else{
+        alert('Something went Wrong')
     }
     ShowSection('latest-payment')
     const latestPayment =document.getElementById('latest-payment');
