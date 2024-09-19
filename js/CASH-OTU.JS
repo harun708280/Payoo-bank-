@@ -39,7 +39,7 @@ document.getElementById('cash-out').addEventListener('click',function(event){
                   <span><i class="fa-solid fa-sack-dollar text-orange-400 text-2xl"></i></span>
               </div>
               <div class="">
-                  <p class="font-bold "> Add Money ${inputAmount}</p>
+                  <p class="font-bold "> Add Money ${ammountInput}</p>
                   <p>Trans : ${randomT}</p>
               </div>
           </div>
