@@ -14,3 +14,9 @@ document.getElementById('transactions-btn').addEventListener('click',function(ev
      ShowSection('Transactions-from')
 
  })
+
+document.getElementById('transfer').addEventListener('click',function(event){
+    event.preventDefault();
+    ShowSection('send-money-from')
+    
+}) 

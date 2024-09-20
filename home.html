@@ -42,7 +42,7 @@
         <span><i class="fa-solid fa-sack-dollar flex justify-center text-orange-400 text-2xl"></i></span>
         <h2 class="font-bold text-center" >Cashout</h2>
     </div>
-    <div class="border border-slate-300 px-2 py-9 flex flex-col rounded-xl justify-center hover:border-orange-600">
+    <div class="border border-slate-300 px-2 py-9 flex flex-col rounded-xl justify-center hover:border-orange-600" id="transfer">
         <span><i class="fa-solid fa-comments-dollar flex justify-center text-orange-400 text-2xl "></i></span>
         <h2 class="font-bold text-center">Transfer </h2>
     </div>
@@ -209,10 +209,45 @@
   </div>
  </div>
 
+ <!-- Transfer -->
+ <div class="mt-6 bg-gray-200 py-7  hidden " id="send-money-from">
+  <h1 class="w-11/12 mx-auto text-2xl font-bold my-3">Send Money</h1>
+  <div class="mx-auto w-11/12">
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <form class="card-body">
+              
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Bank Account Number</span>
+              </label>
+              <input type="text" id="acc-number" placeholder="Enter Bank Account Number" class="input input-bordered" required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input type="text" id="send-money-inputAmount" placeholder="Enter Amount" class="input input-bordered" required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Pin Code</span>
+              </label>
+              <input type="password" id="send-money-code" placeholder="password" class="input input-bordered" required />
+              
+            </div>
+            <div class="form-control mt-6">
+              <button class="btn bg-lime-400" id="send-money">Send Now</button>
+            </div>
+          </form>
+        </div> 
+  </div>
+</div>
+
 
 <script src="./js/main.js"></script>
 <script src="./js/add-money.js"></script>
 <script src="./js/CASH-OTU.JS"></script>
+<script src="./js/sendMoney.js"></script>
 <script src="./js/feature.js"></script>
 </body>
 </html>

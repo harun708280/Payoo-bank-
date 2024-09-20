@@ -10,12 +10,9 @@ document.getElementById('add-money').addEventListener('click',function(event){
         
         const finalAmount=mainAmounts+inputAmount;
         console.log(finalAmount);
-        document.getElementById('totalamount').innerText=finalAmount;        
-    }else{
-        alert('Something went Wrong')
-    }
-
-    ShowSection('latest-payment')
+        document.getElementById('totalamount').innerText=finalAmount; 
+        
+        ShowSection('latest-payment')
 
     const latestPayment=document.getElementById('latest-payment')
 
@@ -57,6 +54,11 @@ document.getElementById('add-money').addEventListener('click',function(event){
       </div>
     `
     TransactionHistoryInfo.appendChild(divs)
+    
+    }else{
+        alert('Something went Wrong')
+    }
+
     
 
 

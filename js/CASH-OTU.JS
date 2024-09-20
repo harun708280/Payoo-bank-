@@ -7,11 +7,8 @@ document.getElementById('cash-out').addEventListener('click',function(event){
     if (mainAmounts>ammountInput && code===1234) {
         const totalamounts=mainAmounts-ammountInput;
         document.getElementById('totalamount').innerText=totalamounts;
-        
-    }else{
-        alert('Something went Wrong')
-    }
-    ShowSection('latest-payment')
+
+        ShowSection('latest-payment')
     const latestPayment =document.getElementById('latest-payment');
     const div=document.createElement('div');
     div.innerHTML=`
@@ -51,5 +48,10 @@ document.getElementById('cash-out').addEventListener('click',function(event){
       </div>
     `
     TransactionHistoryInfo.appendChild(divs)
+        
+    }else{
+        alert('Something went Wrong')
+    }
+    
 
 })
